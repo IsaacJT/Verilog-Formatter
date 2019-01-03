@@ -30,11 +30,8 @@ function runFormatter() {
 	const iStyleExtraArgs = <string>vscode.workspace.getConfiguration().get('verilog-formatter.istyle.args');
 	const style = <string>vscode.workspace.getConfiguration().get('verilog-formatter.istyle.style');
 	const mapStyle = styleMap[style];
-	if (mapStyle === undefined) {
-		return;
-	}
 	var args: string[] = [];
-	if (mapStyle.length !== 0) {
+	if (mapStyle !== undefined && mapStyle.length !== 0) {
 		args.push(`--style=${mapStyle}`);
 	}
 	if (iStyleExtraArgs.length !== 0) {
