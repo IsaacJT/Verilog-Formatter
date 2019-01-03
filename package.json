@@ -1,8 +1,9 @@
 {
 	"name": "verilog-formatter",
 	"displayName": "verilog-formatter",
-	"description": "Verilog code formatter",
+	"description": "A Verilog code formatter using istyle-verilog-formatter",
 	"version": "0.0.1",
+	"license": "MIT",
 	"engines": {
 		"vscode": "^1.30.0"
 	},
@@ -14,6 +15,35 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
+		"configuration": {
+			"title": "Verilog formatter",
+			"properties": {
+				"verilog-formatter.istyle.path": {
+					"scope": "window",
+					"type": "string",
+					"default": "iStyle",
+					"description": "Path to the istyle-verilog-formatter binary"
+				},
+				"verilog-formatter.istyle.args": {
+					"scope": "window",
+					"type": "string",
+					"default": "",
+					"description": "Additional arguments to pass to istyle-verilog-formatter"
+				},
+				"verilog-formatter.istyle.style": {
+					"scope": "window",
+					"type": "string",
+					"default": "Indent only",
+					"description": "iStyle predefined formatting style",
+					"enum": [
+						"ANSI",
+						"K&R",
+						"GNU",
+						"Indent only"
+					]
+				}
+			}
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "yarn run compile",
@@ -28,5 +58,14 @@
 		"tslint": "^5.8.0",
 		"@types/node": "^8.10.25",
 		"@types/mocha": "^2.2.42"
+	},
+	"publisher": "IsaacJT",
+	"homepage": "https://github.com/IsaacJT/Verilog-Formatter",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/IsaacJT/Verilog-Formatter.git"
+	},
+	"bugs": {
+		"url": "https://github.com/IsaacJT/Verilog-Formatter/issues"
 	}
 }
