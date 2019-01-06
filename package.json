@@ -63,7 +63,7 @@
 		"@types/mocha": "^2.2.42",
 		"@types/temp": "^0.8.32"
 	},
-	"publisher": "IsaacJT",
+	"publisher": "IsaacT",
 	"homepage": "https://github.com/IsaacJT/Verilog-Formatter",
 	"repository": {
 		"type": "git",
