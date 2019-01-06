@@ -57,7 +57,7 @@ function getFormattingStyleArg(): string {
 	const style = <string>vscode.workspace.getConfiguration().get('verilog-formatter.istyle.style');
 	const mapStyle = styleMap[style];
 	if (mapStyle !== undefined && mapStyle.length !== 0) {
-		return `--style = ${mapStyle}`;
+		return `--style=${mapStyle}`;
 	} else {
 		return "";
 	}
