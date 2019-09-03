@@ -12,6 +12,7 @@
 	],
 	"activationEvents": [
 		"onLanguage:verilog"
+		"onLanguage:systemverilog"
 	],
 	"main": "./out/extension.js",
 	"contributes": {

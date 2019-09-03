@@ -9,7 +9,7 @@ import * as fs from 'fs';
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
-	vscode.languages.registerDocumentFormattingEditProvider({ scheme: "file", language: "verilog" }, {
+	vscode.languages.registerDocumentFormattingEditProvider({ scheme: "file", language: context.language }, {
 		provideDocumentFormattingEdits(document: vscode.TextDocument): vscode.TextEdit[] {
 			let result: vscode.TextEdit[] = [];
 			temp.track();
