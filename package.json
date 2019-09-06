@@ -11,7 +11,7 @@
 		"Formatters"
 	],
 	"activationEvents": [
-		"onLanguage:verilog"
+		"onLanguage:verilog",
 		"onLanguage:systemverilog"
 	],
 	"main": "./out/extension.js",
