@@ -44,7 +44,7 @@ function runFormatter(document: vscode.TextDocument): vscode.TextEdit[] {
 		args.push(style);
 	}
 	if (iStyleExtraArgs.length !== 0) {
-		args.push(iStyleExtraArgs);
+		args = args.concat(iStyleExtraArgs.split(" "));
 	}
 	var tempfile: string = createTempFileOfDocument(document);
 	args.push(tempfile);
