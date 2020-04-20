@@ -2,7 +2,7 @@
 	"name": "verilog-formatter",
 	"displayName": "verilog-formatter",
 	"description": "A Verilog code formatter using the iStyle Verilog formatter",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"license": "MIT",
 	"engines": {
 		"vscode": "^1.30.0"
