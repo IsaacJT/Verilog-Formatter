@@ -2,7 +2,7 @@
 	"name": "verilog-formatter",
 	"displayName": "verilog-formatter",
 	"description": "A Verilog code formatter using the iStyle Verilog formatter",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"license": "MIT",
 	"engines": {
 		"vscode": "^1.30.0"
@@ -61,7 +61,7 @@
 		"@types/temp": "^0.8.32",
 		"tslint": "^5.8.0",
 		"typescript": "^3.1.4",
-		"vscode": "^1.1.25"
+		"vscode": "^1.1.37"
 	},
 	"publisher": "IsaacT",
 	"homepage": "https://github.com/IsaacJT/Verilog-Formatter",
